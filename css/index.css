@@ -1,0 +1,125 @@
+
+header
+{
+    position: relative;
+    display: flex;
+    height: 88vh;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+header video
+{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    pointer-events: none;
+}
+
+header .mask
+{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #88888848;
+    background-image: radial-gradient(#969696 2.5px ,transparent 4px);
+    background-size: 60px 60px;
+}
+
+header .text_wrapper
+{
+    z-index: 3;
+    position: absolute;
+    width: 80%;
+    font-size: 2em;
+    color: #EDEDE9;
+}
+
+header .text
+{
+    border-right: 2px solid #EDEDE9;
+    width: 12em;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header .text span
+{
+    color: #8F778A;
+}
+
+.anim-typewriter 
+{
+    animation: typewriter 4s steps(20) 1s 1 normal both,
+    blinkTextCursor 500ms steps(20) infinite normal;
+}
+
+@keyframes typewriter 
+{
+    from 
+    {
+          width: 0;
+    }
+    to 
+    {
+          width: 12em;
+    }
+}
+
+@keyframes blinkTextCursor 
+{
+    from 
+    {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to 
+    {
+          border-right-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 500px) 
+{
+    .text
+    {
+        font-size: 0.7em;
+    }
+}
+
+.btnDo
+{
+    z-index: 3;
+    transition: all 3s;
+    opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    padding: .3em 1.2em;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.226);
+    border: 2px solid #EDEDE9;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #EDEDE9;
+}
+
+.btnDo:hover
+{
+    -webkit-box-shadow: 0px 0px 5px 8px #a7a7a788;
+    -moz-box-shadow: 0px 0px 5px 8px #a7a7a788;
+    box-shadow: 0px 0px 5px 8px #a7a7a788;
+}

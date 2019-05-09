@@ -1,0 +1,85 @@
+body
+{
+    background-color: #2E3237;
+}
+
+.container
+{
+    background-color: rgb(26, 28, 31);
+    height: 88vh;
+}
+
+.container *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container .users
+{
+    height: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container .user_wrapper
+{
+    width: 100%;
+}
+
+.container .users::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+.container .users::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: #8F778A;
+}
+
+.container .users .profile_link
+{
+    text-decoration: none;
+}
+
+.container .users .user
+{
+    min-height: 7em;
+}
+
+.container .users img
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    height: 5em;
+    border: solid #8F778A 1px;
+    border-radius: 50%;
+}
+
+.container .users h2
+{
+    padding: 1em 0;
+    font-size: 0.8em;
+    color: #A691A3;
+}
+
+.container .users p
+{
+    width: 90%;
+    font-size: 0.8em;
+    color: #F6F7F7;
+}
+
+@media only screen and (max-width: 768px) 
+{
+    .container .users img
+    {
+        display: none;
+    }
+}

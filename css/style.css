@@ -1,0 +1,177 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
+    background-color: #F6F7F7;
+    z-index: 1;
+}
+
+nav
+{
+    height: 12vh;
+    padding: 0 20px;
+    background: #302F32;
+    color: #7D7C7D;
+}
+
+nav .logo
+{
+    font-weight: 700;
+    line-height: 12vh;
+    margin-left: 1.5vw;
+    padding-right: 5px; 
+    float: left;
+    font-size: 2.8em;
+    text-decoration: none;
+    color: #8F778A;
+}
+
+nav .menu 
+{
+    height: 12vh;
+    line-height: 12vh;
+    float: right;
+}
+
+nav .menu a
+{
+    padding: 0 10px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #7D7C7D;
+}
+
+nav .menu i
+{
+    padding: 0 10px;
+    line-height: 12vh;
+}
+
+nav .show_menu_btn
+{
+    float: right;
+}
+
+nav .show_menu_btn i
+{
+    line-height: 12vh;
+}
+
+nav .show_menu_btn,
+nav .hide_menu_btn
+{
+    transition: 700ms;
+    cursor: pointer;
+    display: none;
+    font-size: 2em;
+}
+
+nav .menu a:hover,
+nav .menu a:active,
+nav .show_menu_btn,
+nav .hide_menu_btn
+{
+    color: #A691A3;
+}
+
+#cbMenu
+{
+    position: absolute;
+    visibility: hidden;
+    z-index: -100;
+}
+
+@media screen and (max-width:768px)
+{
+    nav .show_menu_btn,
+    nav .hide_menu_btn
+    {
+        display: block;
+    }
+    nav .menu
+    {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        transition: 400ms;
+        text-align: center;
+        line-height: normal;
+        background: #2E3237;
+    }
+    nav .menu a
+    {
+        display: block;
+        padding: 15px;
+    }
+    nav .menu a:first-child
+    {
+        margin-top: 22vh; 
+    }
+    nav .hide_menu_btn
+    {
+        position: absolute;
+        padding: 20px;
+        top: 20px;
+        right: 20px;
+    }
+    #cbMenu:checked ~ .menu
+    {
+        right: 0;
+        z-index: 1000;
+    }
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+} 
+
+.clearfix::after {
+  clear: both;
+}
+
+.swal-overlay
+{
+    background-color: #00000056;
+}
+
+.swal-modal
+{
+    background-color: #302F32;
+}
+
+.swal-text
+{
+    color: #8F778A;
+}
+
+.swal-icon--success::after,
+.swal-icon--success::before,
+.swal-icon--success__hide-corners
+{
+    background-color: #302F32;
+}
+
+.swal-button 
+{
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #8F778A;
+    color: #302F32;
+    font-size: 12px;
+    box-shadow: none;
+}
+
+.swal-button-container:hover .swal-button
+{
+    background-color: #8F778A;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+}

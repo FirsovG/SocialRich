@@ -1,0 +1,104 @@
+form
+{
+    width: 20em;
+    padding: 25px;
+    position: absolute;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #363636;
+}
+
+form *
+{
+    display: block;
+    margin: 20px auto;
+}
+
+form a,
+form h1,
+form label
+{
+    color: #ffffff;
+}
+
+form h1
+{
+    font-size: 1.5em;
+    border-bottom: 4px solid #8F778A;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+input 
+{
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #8F778A;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+label
+{
+    font-size: 0.9em;
+    height: .8em;
+}
+
+textarea
+{
+    resize: none;
+    height: 3em;
+    overflow: hidden;
+    width: 100%;
+    background-color: #535353;
+    color: #fff;
+    border: none;
+}
+
+select
+{
+    width: 90%;
+    background-color: #535353;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+}
+
+button
+{
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    background: none;
+    border: 2px solid #8F778A;
+    color: #dadada;
+    padding: 5px 25px;
+    font-size: 0.9em;
+}
+
+button:hover
+{
+    border: 2px solid #8F778A;
+    color: #ffffff;
+}
+
+form a
+{
+    text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (max-height: 700px) 
+{
+    form 
+    {
+        margin-top: 40px;
+    }
+}

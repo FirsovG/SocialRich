@@ -1,0 +1,87 @@
+body
+{
+    background-color: #2E3237;
+}
+
+.container
+{
+    background-color: rgb(26, 28, 31);
+    height: 88vh;
+}
+
+.container *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container .chats
+{
+    height: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container .chat_wrapper
+{
+    width: 100%;
+}
+
+.container .chats::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+.container .chats::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: #8F778A;
+}
+
+.container .chats .chat_link
+{
+    text-decoration: none;
+    display: block;
+    border-bottom: solid rgba(143, 119, 138, 0.466) 1px;
+}
+
+.container .chats .chat
+{
+    min-height: 7em;
+}
+
+.container .chats img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 5em;
+    border: solid #8F778A 1px;
+    border-radius: 50%;
+}
+
+.container .chats h2
+{
+    padding: 1.5em 0;
+    font-size: 0.8em;
+    color: #A691A3;
+}
+
+.container .chats p
+{
+    width: 90%;
+    font-size: 0.8em;
+    color: #F6F7F7;
+}
+
+@media only screen and (max-width: 768px) 
+{
+    .container .chats img
+    {
+        display: none;
+    }
+}

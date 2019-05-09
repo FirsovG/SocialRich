@@ -1,0 +1,133 @@
+body
+{
+    background-color: #2E3237;
+}
+
+.container
+{
+    background-color: rgb(26, 28, 31);
+    height: 88vh;
+}
+
+.container *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container .get_message
+{
+    height: 77vh;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container .message_wrapper
+{
+    width: 100%;
+}
+
+.container .get_message::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+.container .get_message::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: #8F778A;
+}
+.container .get_message .message
+{
+    min-height: 7em;
+}
+
+.container .get_message img
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    height: 5em;
+    border: solid #8F778A 1px;
+    border-radius: 50%;
+}
+
+.container .get_message a
+{
+    text-decoration: none;
+}
+
+.container .get_message h2
+{
+    padding: 1em 0;
+    font-size: 0.8em;
+    color: #A691A3;
+}
+
+.container .get_message p
+{
+    width: 90%;
+    font-size: 0.8em;
+    color: #F6F7F7;
+}
+
+.container .get_message .server h2
+{
+    color: #00ffd5;
+}
+
+.container .get_message .you
+{
+    text-align: right;
+}
+
+.container .get_message .you p
+{
+    float: right;
+}
+
+.container .send_message
+{
+    width: 80%;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.container .send_message textarea
+{
+    margin: 1vh auto;
+    width: 80%;
+    height: 40px;
+    border: 1.5px solid #2E3237;
+    border-radius: 3px;
+    resize: none;
+    background-color: rgba(46, 50, 55, 0.521);
+    color: #F6F7F7;
+    font-size: 1.75em;
+    padding: .5vh .5vw;
+}
+
+.container .send_message button
+{
+    margin: 1vh auto;
+    width: 20%;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid rgb(3, 247, 255);
+    border-radius: 3px;
+    background-color: transparent;
+    color: rgb(3, 247, 255);
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 768px) 
+{
+    .container .get_message img
+    {
+        display: none;
+    }
+}
